@@ -1,0 +1,13 @@
+import scala.io.StdIn._
+
+object Main extends App {
+
+    val n = readLine().trim().toInt
+    val a = Array.fill(n)(readLine().trim().toInt)
+    
+    if (a.contains(0)){
+        println("NO")
+    } else {
+        println("YES")
+    }
+}

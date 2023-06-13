@@ -1,0 +1,127 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String... args) {
+        
+        var sc = new Scanner(System.in);
+        
+        var ans = 0;
+        var add = 0;
+        var s = new int[9];
+        var b = new int[9][4];
+        var panels = new Integer[9];
+
+        for (var i = 0; i < 9; i++) {
+            s[i] = sc.nextInt();
+            panels[i] = i;
+            ans += s[i];
+        }
+
+        for (var i = 0; i < 9; i++) {
+            if (i == 4) {
+                for (var j = 0; j < 4; j++) {
+                    b[i][j] = sc.nextInt();
+                }
+            } else if (i % 2 == 0) {
+                for (var j = 0; j < 3; j++) {
+                    b[i][j] = sc.nextInt();
+                }
+            } else {
+                for (var j = 0; j < 2; j++) {
+                    b[i][j] = sc.nextInt();
+                }
+            }
+        }
+
+        var l1 = new ArrayList<Integer[]>();
+        permute(l1, Arrays.asList(panels), 0);
+        
+        for (var p : l1) {
+
+            var openedPanel = new boolean[9];
+            var tmp = 0;
+            
+            for (var i = 0; i < 9; i++) {
+            
+                var line = 0;
+            
+                switch (p[i]) {
+                    
+                    case 0 -> {
+                        line += (openedPanel[1] && openedPanel[2] ? 1 : 0);
+                        line += (openedPanel[3] && openedPanel[6] ? 1 : 0);
+                        line += (openedPanel[4] && openedPanel[8] ? 1 : 0);
+                    }
+                    
+                    case 1 -> {
+                        line += (openedPanel[0] && openedPanel[2] ? 1 : 0);
+                        line += (openedPanel[4] && openedPanel[7] ? 1 : 0);
+                    }
+                    
+                    case 2 -> {
+                        line += (openedPanel[0] && openedPanel[1] ? 1 : 0);
+                        line += (openedPanel[5] && openedPanel[8] ? 1 : 0);
+                        line += (openedPanel[4] && openedPanel[6] ? 1 : 0);
+                    }
+                    
+                    case 3 -> {
+                        line += (openedPanel[0] && openedPanel[6] ? 1 : 0);
+                        line += (openedPanel[4] && openedPanel[5] ? 1 : 0);
+                    }
+                    
+                    case 4 -> {
+                        line += (openedPanel[0] && openedPanel[8] ? 1 : 0);
+                        line += (openedPanel[2] && openedPanel[6] ? 1 : 0);
+                        line += (openedPanel[1] && openedPanel[7] ? 1 : 0);
+                        line += (openedPanel[3] && openedPanel[5] ? 1 : 0);
+                    }
+                    
+                    case 5 -> {
+                        line += (openedPanel[2] && openedPanel[8] ? 1 : 0);
+                        line += (openedPanel[3] && openedPanel[4] ? 1 : 0);
+                    }
+                    
+                    case 6 -> {
+                        line += (openedPanel[0] && openedPanel[3] ? 1 : 0);
+                        line += (openedPanel[2] && openedPanel[4] ? 1 : 0);
+                        line += (openedPanel[7] && openedPanel[8] ? 1 : 0);
+                    }
+        
+                    case 7 -> {
+                        line += (openedPanel[1] && openedPanel[4] ? 1 : 0);
+                        line += (openedPanel[6] && openedPanel[8] ? 1 : 0);
+                    }
+                    
+                    case 8 -> {
+                        line += (openedPanel[2] && openedPanel[5] ? 1 : 0);
+                        line += (openedPanel[6] && openedPanel[7] ? 1 : 0);
+                        line += (openedPanel[0] && openedPanel[4] ? 1 : 0);
+                    }
+                }
+              
+                if (0 < line) {
+                    tmp += b[p[i]][line - 1];
+                }
+                
+                openedPanel[p[i]] = true;
+            }
+            
+            add = Math.max(add, tmp);
+        }
+
+        System.out.println(ans + add);
+    }
+    
+    static void permute(List<Integer[]> l1, List<Integer> l2, int k){
+        
+        for(var i = k; i < l2.size(); i++){
+            Collections.swap(l2, i, k);
+            permute(l1, l2, k + 1);
+            Collections.swap(l2, k, i);
+        }
+        
+        if (k == l2.size() - 1){
+            l1.add(l2.toArray(new Integer[l2.size()]));
+        }
+    }
+}
