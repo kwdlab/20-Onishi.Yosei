@@ -3,10 +3,10 @@ import scala.io.StdIn._
 object Main extends App {
 
     val Array(n, k) = readLine().split(" ").map(_.toInt)
-    val A = readLine().split(" ").map(_.toDouble).sorted
-    println(binarySearch(A, n, k))
+    val an = readLine().split(" ").map(_.toDouble).sorted
+    println(binarySearch(an, n, k))
 
-    def binarySearch(A: Array[Double], n: Int, target: Int): Double = {
+    def binarySearch(an: Array[Double], n: Int, target: Int): Double = {
         var left = 0.toDouble
         var right = 10001.toDouble
         for (_ <- 0 until 100){
