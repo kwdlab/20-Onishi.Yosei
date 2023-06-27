@@ -15,10 +15,7 @@ object Main extends App {
     val result = tmp.toSet
     for (_ <- 0 until k) {
         val q = readLine().trim().toInt
-        if (result.contains(q)){
-            println("Yes")
-        } else {
-            println("No")
-        }
+        if (result.contains(q)) println("Yes")
+        else println("No")
     }
 }

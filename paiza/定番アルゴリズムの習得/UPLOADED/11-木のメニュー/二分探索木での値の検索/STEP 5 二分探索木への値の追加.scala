@@ -16,11 +16,8 @@ object Main extends App {
         val b = line(1).toInt
         val lr = line(2)
         val index = {
-            if (lr == "L"){
-                2 * location(a) + 1 
-            }else{
-                2 * location(a) + 2 
-            }
+            if (lr == "L") 2 * location(a) + 1 
+            else 2 * location(a) + 2 
         }
         location.put(b, index)
         g(index) = b
@@ -30,21 +27,13 @@ object Main extends App {
     var now = 0
     while (g(now) != -1) {
         now = {
-            if (v < g(now)){
-                2 * now + 1 
-            } 
-            else{
-                2 * now + 2
-            } 
+            if (v < g(now)) 2 * now + 1 
+            else 2 * now + 2
         }
     }
+    
     println(g((now - 1) / 2))
-    if (now % 2 == 0){
-        println("R")
-    }  
-    else{
-        println("L")
-    } 
-
+    if (now % 2 == 0) println("R") 
+    else println("L")
 }
 //解答例使用済み

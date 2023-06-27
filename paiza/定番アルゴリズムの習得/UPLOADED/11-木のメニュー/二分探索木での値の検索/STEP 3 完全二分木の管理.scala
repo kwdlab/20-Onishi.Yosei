@@ -13,11 +13,8 @@ object Main extends App {
         val lr = line(2)
 
         val i = g.indexOf(a)
-        if (lr == "L"){
-            g(2*i + 1) = b
-        } else {
-            g(2*i + 2) = b
-        }
+        if (lr == "L") g(2*i + 1) = b
+        else g(2*i + 2) = b
     }
 
     for (_ <- 0 until k){
@@ -26,10 +23,7 @@ object Main extends App {
         val lrk = linek(1)
 
         val j = g.indexOf(v)
-        if (lrk == "L"){
-            println(g(2*j + 1))
-        } else {
-            println(g(2*j + 2))
-        }
+        if (lrk == "L") println(g(2*j + 1))
+        else println(g(2*j + 2))
     }
 }

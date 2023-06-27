@@ -11,11 +11,9 @@ object Main extends App {
                 return false
             }
         }
-        return true
+        true
     }  
-    if (printOut){
-        println("YES")
-    }
+    if (printOut) println("YES")
 }
 //解答例使用済み
 //予期しない入力に対する失敗
