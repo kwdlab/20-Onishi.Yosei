@@ -22,10 +22,7 @@ object Main extends App {
     def dfs(now: Int): Unit = {
         dfsUnvisited(now) = false
         if (dfsUnvisited(y-1)) dfsCount += 1
-
-        for (nxt <- graph(now)) {
-            if (dfsUnvisited(nxt)) dfs(nxt)
-        }
+        graph(now).foreach(nxt => if (dfsUnvisited(nxt)) dfs(nxt))
     }
     def bfs(): Unit = {
         val q = Queue[Int](x-1)
@@ -47,13 +44,8 @@ object Main extends App {
     dfs(x-1)
     bfs()
 
-    if (bfsCount < dfsCount) {
-        println("bfs")
-    } else if (bfsCount == dfsCount) {
-        println("same")
-    } else {
-        println("dfs")
-    }
+    if (bfsCount < dfsCount) println("bfs")
+    else if (bfsCount == dfsCount) println("same")
+    else println("dfs")
 }
-
 //解答例使用済み

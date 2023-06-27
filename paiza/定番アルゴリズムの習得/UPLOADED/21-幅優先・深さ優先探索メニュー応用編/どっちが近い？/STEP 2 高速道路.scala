@@ -8,13 +8,12 @@ object Main extends App {
 
     val graph = Array.fill(n)(List.empty[Int])
     for (_ <- 0 until m) {
-        val Array(a, b) = readLine().split(" ").map(_.toInt)
-        graph(a - 1) ::= b - 1
-        graph(b - 1) ::= a - 1
+        val Array(a, b) = readLine().split(" ").map(_.toInt - 1)
+        graph(a) ::= b
+        graph(b) ::= a
     }
 
-    val q = Queue[Int]()
-    q.enqueue(0)
+    val q = Queue[Int](0)
     val dist = Array.fill(n)(-1)
     dist(0) = 0
 
@@ -28,13 +27,10 @@ object Main extends App {
             }
         }
     }
-    var ans = 0
-    for (i <- 0 until n){
-        if (5 * dist(i) < t(i)){
-            ans += 1
-        }
+    val ans = (0 until n).foldLeft(0) { case (tmp, i) => 
+        if (5 * dist(i) < t(i)) tmp+1
+        else tmp
     }
     println(ans)
 }
-
 //解答例使用済み

@@ -7,14 +7,13 @@ object Main extends App {
     val c = readLine().split(" ").map(_.toInt)
     val graph = Array.fill(n)(List.empty[Int])
 
-    for (i <- 0 until m) {
-        val Array(a, b) = readLine().split(" ").map(_.toInt)
-        graph(a - 1) = b - 1 :: graph(a - 1)
-        graph(b - 1) = a - 1 :: graph(b - 1)
+    for (_ <- 0 until m) {
+        val Array(a, b) = readLine().split(" ").map(_.toInt - 1)
+        graph(a) ::= b
+        graph(b) ::= a
     }
 
-    val q = Queue[Int]()
-    q.enqueue(x-1)
+    val q = Queue[Int](x-1)
     val dist = Array.fill(n)(-1)
     dist(x-1) = 0
 
@@ -36,5 +35,4 @@ object Main extends App {
     println(ans.length)
     ans.foreach(println)
 }
-
 //解答例使用済み

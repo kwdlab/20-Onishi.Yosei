@@ -18,10 +18,7 @@ object Main extends App {
     def dfs(now: Int): Unit = {
         unvisited(now) = false
         println(now + 1)
-        for (nxt <- graph(now)) {
-            if (unvisited(nxt)) dfs(nxt)
-        }
+        graph(now).foreach(nxt => if (unvisited(nxt)) dfs(nxt))
     }
-
     dfs(x-1)
 }

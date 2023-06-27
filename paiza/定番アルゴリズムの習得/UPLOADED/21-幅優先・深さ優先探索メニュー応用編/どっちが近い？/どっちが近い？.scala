@@ -4,8 +4,7 @@ import scala.collection.mutable.Queue
 object Main extends App {
 
     def bfs(graph: Array[List[Int]], x: Int): Array[Int] = {
-        val q = Queue[Int]()
-        q.enqueue(x)
+        val q = Queue[Int](x)
         val dist = Array.fill(graph.length)(-1)
         dist(x) = 0
 
@@ -23,25 +22,19 @@ object Main extends App {
 
     val Array(n, m, x, y) = readLine().split(" ").map(_.toInt)
     val graph = Array.fill(n)(List.empty[Int])
-
-    for (i <- 0 until m) {
-        val Array(a, b) = readLine().split(" ").map(_.toInt)
-        graph(a - 1) = b - 1 :: graph(a - 1)
-        graph(b - 1) = a - 1 :: graph(b - 1)
+    for (_ <- 0 until m) {
+        val Array(a, b) = readLine().split(" ").map(_.toInt - 1)
+        graph(a) ::= b
+        graph(b) ::= a
     }
 
     val distX = bfs(graph, x - 1)
     val distY = bfs(graph, y - 1)
 
     for (i <- 0 until n) {
-        if (distX(i) < distY(i)) {
-            println("X is closer")
-        } else if (distX(i) == distY(i)) {
-            println("Same")
-        } else {
-            println("Y is closer")
-        }
+        if (distX(i) < distY(i)) println("X is closer")
+        else if (distX(i) == distY(i)) println("Same")
+        else println("Y is closer")
     }
 }
-
 //解答例使用済み

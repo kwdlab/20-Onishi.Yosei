@@ -13,12 +13,10 @@ object Main extends App {
         for (i <- 0 until 4) {
             val nx = x + dx(i)
             val ny = y + dy(i)
-            if (0 <= ny && ny < h && 0 <= nx && nx < w && s(ny)(nx) == ".") {
-                dfs(ny, nx)
-            }
+            if (0 <= ny && ny < h && 0 <= nx && nx < w && s(ny)(nx) == ".") dfs(ny, nx)
         }
     }
-
+    
     val ans = (for {
         i <- 0 until h
         j <- 0 until w
@@ -27,7 +25,17 @@ object Main extends App {
         dfs(i, j)
         1
     }).sum
-
     println(ans)
 }
 //解答例使用済み
+
+/*
+    var ans = 0
+
+    for (i <- 0 until h; j <- 0 until w) {
+        if (s(i)(j) == "."){
+            dfs(i, j)
+            ans += 1
+        }
+    }
+*/

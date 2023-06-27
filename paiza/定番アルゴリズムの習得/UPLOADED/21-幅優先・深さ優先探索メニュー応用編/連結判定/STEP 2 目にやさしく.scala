@@ -4,8 +4,7 @@ import scala.collection.mutable.Queue
 object Main extends App {
 
     def bfs(s: Array[Array[String]], n: Int, m: Int, x: Int, y: Int, c: String): Unit = {
-        val q = Queue[(Int, Int)]()
-        q.enqueue((x, y))
+        val q = Queue[(Int, Int)]((x, y))
 
         val dx = Array(1, 0, -1, 0)
         val dy = Array(0, 1, 0, -1)
@@ -18,11 +17,9 @@ object Main extends App {
                 val nextX = nowX + dx(i)
                 val nextY = nowY + dy(i)
 
-                if (nextX < 0 || nextX >= n || nextY < 0 || nextY >= m) {
-
-                } else if (s(nextX)(nextY) != c) {
-
-                } else {
+                if (nextX < 0 || nextX >= n || nextY < 0 || nextY >= m) {}
+                else if (s(nextX)(nextY) != c) {}
+                else {
                     s(nextX)(nextY) = "+"
                     q.enqueue((nextX, nextY))
                 }
@@ -31,30 +28,21 @@ object Main extends App {
     }
 
     val Array(n, m) = readLine().trim().split(" ").map(_.toInt)
-    val s = Array.ofDim[String](n, m)
-    for (i <- 0 until n) {
-        s(i) = readLine().trim().split("")
-    }
+    val s = Array.fill(n)(readLine().trim().split(""))
 
     val rgb = Array("R", "G", "B")
     var ans = Int.MaxValue
     for (c <- rgb) {
         val t = s.map(_.clone())
-        for (i <- 0 until n) {
-            for (j <- 0 until m) {
-                if (t(i)(j) != c) {
-                    t(i)(j) = "."
-                }
-            }
+        for (i <- 0 until n; j <- 0 until m) {
+            if (t(i)(j) != c) t(i)(j) = "."
         }
 
         var cnt = 0
-        for (i <- 0 until n) {
-            for (j <- 0 until m) {
-                if (t(i)(j) != "+") {
-                    cnt += 1
-                    bfs(t, n, m, i, j, t(i)(j))
-                }
+        for (i <- 0 until n; j <- 0 until m) {
+            if (t(i)(j) != "+") {
+                cnt += 1
+                bfs(t, n, m, i, j, t(i)(j))
             }
         }
         ans = Array(ans, cnt).min
