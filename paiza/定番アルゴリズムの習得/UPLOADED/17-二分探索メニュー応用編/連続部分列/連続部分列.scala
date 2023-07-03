@@ -27,11 +27,8 @@ object Main extends App {
             }
         }
 
-        if (sum < k) {
-            left = mid
-        } else {
-            right = mid
-        }
+        if (sum < k) left = mid
+        else right = mid
     }
 
     println(right)

@@ -22,16 +22,11 @@ object Main extends App {
                 sum += 1
                 count = 0
             }
-            if (i != n-1 && a(i)+1 != a(i+1)){
-                count = 0
-            }
+            if (i != n-1 && a(i)+1 != a(i+1)) count = 0
         }
 
-        if (sum >= k) {
-            left = mid
-        } else {
-            right = mid
-        }
+        if (sum >= k) left = mid
+        else right = mid
     }
     println(left)
 }

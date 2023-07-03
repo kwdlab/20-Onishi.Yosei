@@ -25,11 +25,8 @@ object Main extends App {
         while (right - left > 1) {
             val mid = (left + right) / 2
 
-            if (a(i) * mid * mid + b(i) * mid + c(i) >= k) {
-                right = mid
-            } else {
-                left = mid
-            }
+            if (a(i) * mid * mid + b(i) * mid + c(i) >= k) right = mid
+            else left = mid
         }
         ans = ans.max(right)
     }

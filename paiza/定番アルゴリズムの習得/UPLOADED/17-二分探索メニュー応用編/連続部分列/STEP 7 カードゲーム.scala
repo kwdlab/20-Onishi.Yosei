@@ -30,16 +30,11 @@ object Main extends App {
 
         var pos = 0
         for (i <- 0 until n){
-            if (d(i) > c(pos)){
-                pos += 1
-            }
+            if (d(i) > c(pos)) pos += 1
         }
 
-        if (pos > n/2) {
-            right = mid
-        } else {
-            left = mid
-        }
+        if (pos > n/2) right = mid
+        else left = mid
     }
     println(right)
 }

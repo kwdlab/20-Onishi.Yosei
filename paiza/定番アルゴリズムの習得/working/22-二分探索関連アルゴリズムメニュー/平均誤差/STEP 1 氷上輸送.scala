@@ -17,11 +17,8 @@ object Main extends App {
             for (a <- A){
                 num = num + (a/mid).toInt
             }
-            if (num < target){
-                right = mid 
-            } else {
-                left = mid
-            }
+            if (num < target) right = mid 
+            else left = mid
         }
         return left
     }
