@@ -1,0 +1,12 @@
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(money.MoneyTest, org.scalatest.tools.Framework$$anon$1@73e32a91, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mMoneyTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31mmoney.MoneyTest *** ABORTED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  5 did not equal 10 (MoneyTest.scala:9)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 359 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 0, aborted 1[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 0, failed 0, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m*** 1 SUITE ABORTED ***[0m[0m
+[0m[[0m[31merror[0m] [0m[0mError during tests:[0m
+[0m[[0m[31merror[0m] [0m[0m	money.MoneyTest[0m
+[0m[[0m[31merror[0m] [0m[0m(Test / [31mtest[0m) sbt.TestsFailedException: Tests unsuccessful[0m
