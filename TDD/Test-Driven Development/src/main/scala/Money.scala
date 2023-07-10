@@ -6,7 +6,10 @@ class Money(protected val amount: Int) {
         amount == money.amount && getClass().equals(money.getClass())
     }
 
-    def dollar: Dollar = {
+    def dollar(): Money = {
         new Dollar(amount)
+    }
+    def franc(): Money = {
+        new Franc(amount)
     }
 }

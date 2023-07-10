@@ -5,22 +5,22 @@ import org.scalatest.Assertions._
 
 class MoneyTest extends AnyFlatSpec {
     "testMultiplication" should "1" in {
-        val five = new Dollar(5)
-        assert(five.times(2).equals(new Dollar(10)) == true)
-        assert(five.times(3).equals(new Dollar(15)) == true)
+        val five = new Money(5).dollar
+        assert(five.times(2).equals(new Money(10).dollar) == true)
+        assert(five.times(3).equals(new Money(15).dollar) == true)
     }
 
     "testEquality" should "2" in {
-        assert(new Dollar(5).equals(new Dollar(5)) == true)
-        assert(new Dollar(5).equals(new Dollar(6)) == false)
-        assert(new Franc(5).equals(new Franc(5)) == true)
-        assert(new Franc(5).equals(new Franc(6)) == false)
-        assert(new Dollar(5).equals(new Franc(5)) == false)  
+        assert(new Money(5).dollar.equals(new Money(5).dollar) == true)
+        assert(new Money(5).dollar.equals(new Money(6).dollar) == false)
+        assert(new Money(5).franc.equals(new Money(5).franc) == true)
+        assert(new Money(5).franc.equals(new Money(6).franc) == false)
+        assert(new Money(5).dollar.equals(new Money(5).franc) == false)  
     }
 
     "testFrancMultiplication" should "3" in {
-        val five = new Franc(5)
-        assert(five.times(2).equals(new Franc(10)) == true)
-        assert(five.times(3).equals(new Franc(15)) == true)
+        val five = new Money(5).franc
+        assert(five.times(2).equals(new Money(10).franc) == true)
+        assert(five.times(3).equals(new Money(15).franc) == true)
     }
 }
