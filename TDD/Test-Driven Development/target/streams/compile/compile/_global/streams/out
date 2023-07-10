@@ -1,0 +1,8 @@
+[0m[[0m[31merror[0m] [0m[0mD:\GitHub\20-Onishi.Yosei\TDD\Test-Driven Development\src\main\scala\Dollar.scala:3:25: not enough arguments for constructor Money: (amount: Int): money.Money.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter amount.[0m
+[0m[[0m[31merror[0m] [0m[0mclass Dollar () extends Money {[0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0mD:\GitHub\20-Onishi.Yosei\TDD\Test-Driven Development\src\main\scala\Dollar.scala:6:27: no arguments allowed for nullary constructor Dollar: (): money.Dollar[0m
+[0m[[0m[31merror[0m] [0m[0m        new Dollar(amount * multiplier)[0m
+[0m[[0m[31merror[0m] [0m[0m                          ^[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m

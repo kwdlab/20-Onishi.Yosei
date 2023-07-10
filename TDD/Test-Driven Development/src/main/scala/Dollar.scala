@@ -1,6 +1,6 @@
 package money
 
-class Dollar (private val amount: Int) {
+class Dollar(amount: Int) extends Money(amount) {
     
     def times(multiplier: Int): Dollar = {
         new Dollar(amount * multiplier)
