@@ -7,6 +7,6 @@ class Dollar (val amount: Int) {
     }
 
     def equals(dollar: Dollar): Boolean = {
-        true
+        amount == dollar.amount
     }
 }

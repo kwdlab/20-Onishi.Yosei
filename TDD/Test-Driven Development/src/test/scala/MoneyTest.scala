@@ -13,6 +13,7 @@ class MoneyTest extends AnyFlatSpec {
     }
 
     "testEquality" should "testEquality" in {
-        assert(new Dollar(5).equals(new Dollar(5)))  
+        assert(new Dollar(5).equals(new Dollar(5)) == true)
+        assert(new Dollar(5).equals(new Dollar(6)) == false)  
     }
 }
