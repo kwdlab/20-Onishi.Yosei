@@ -1,0 +1,57 @@
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] IncrementalCompile -----------[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncrementalCompile.incrementalCompile[0m
+[0m[[0m[0mdebug[0m] [0m[0mprevious = Stamps for: 0 products, 0 sources, 0 libraries[0m
+[0m[[0m[0mdebug[0m] [0m[0mcurrent source = Set(${BASE}/src/main/scala/Calc.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> initialChanges = InitialChanges(Changes(added = Set(${BASE}/src/main/scala/Calc.scala), removed = Set(), changed = Set(), unmodified = ...),Set(),Set(),API Changes: Set())[0m
+[0m[[0m[0mdebug[0m] [0m[0mFull compilation, no sources in previous analysis.[0m
+[0m[[0m[0mdebug[0m] [0m[0mall 1 sources are invalidated[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: [0m
+[0m[[0m[0mdebug[0m] [0m[0mRecompiling all sources: number of invalidated sources > 50.0 percent of all sources[0m
+[0m[[0m[0mdebug[0m] [0m[0mcompilation cycle 1[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to D:\GitHub\20-Onishi.Yosei\TDD\scalatest_study\target\scala-2.13\classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mGetting org.scala-sbt:compiler-bridge_2.13:1.8.0:compile for Scala 2.13.11[0m
+[0m[[0m[0minfo[0m] [0m[0mNon-compiled module 'compiler-bridge_2.13' for Scala 2.13.11. Compiling...[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating plain compiler interface for 2.13.11.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  > Arguments: [0m
+[0m[[0m[0mdebug[0m] [0m[0m	-d[0m
+[0m[[0m[0mdebug[0m] [0m[0m	D:\syake\Temp\sbt_7b4d4c47[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-nowarn[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-bootclasspath[0m
+[0m[[0m[0mdebug[0m] [0m[0m	C:\Users\syake\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-library\2.13.11\scala-library-2.13.11.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-classpath[0m
+[0m[[0m[0mdebug[0m] [0m[0m	C:\Users\syake\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-sbt\compiler-interface\1.8.0\compiler-interface-1.8.0.jar;C:\Users\syake\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-sbt\util-interface\1.8.0\util-interface-1.8.0.jar;C:\Users\syake\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-sbt\compiler-bridge_2.13\1.8.0\compiler-bridge_2.13-1.8.0-sources.jar;C:\Users\syake\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-compiler\2.13.11\scala-compiler-2.13.11.jar;C:\Users\syake\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-reflect\2.13.11\scala-reflect-2.13.11.jar;C:\Users\syake\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\io\github\java-diff-utils\java-diff-utils\4.12\java-diff-utils-4.12.jar;C:\Users\syake\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\jline\jline\3.22.0\jline-3.22.0.jar;C:\Users\syake\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	D:\syake\Temp\sbt_5bd2fdfa\scala\ZincCompat.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	D:\syake\Temp\sbt_5bd2fdfa\xsbt\API.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	D:\syake\Temp\sbt_5bd2fdfa\xsbt\AbstractZincFile.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	D:\syake\Temp\sbt_5bd2fdfa\xsbt\Analyzer.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	D:\syake\Temp\sbt_5bd2fdfa\xsbt\CallbackGlobal.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	D:\syake\Temp\sbt_5bd2fdfa\xsbt\ClassName.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	D:\syake\Temp\sbt_5bd2fdfa\xsbt\Compat.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	D:\syake\Temp\sbt_5bd2fdfa\xsbt\CompilerBridge.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	D:\syake\Temp\sbt_5bd2fdfa\xsbt\ConsoleBridge.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	D:\syake\Temp\sbt_5bd2fdfa\xsbt\DelegatingReporter.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	D:\syake\Temp\sbt_5bd2fdfa\xsbt\Dependency.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	D:\syake\Temp\sbt_5bd2fdfa\xsbt\ExtractAPI.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	D:\syake\Temp\sbt_5bd2fdfa\xsbt\ExtractUsedNames.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	D:\syake\Temp\sbt_5bd2fdfa\xsbt\GlobalHelpers.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	D:\syake\Temp\sbt_5bd2fdfa\xsbt\InteractiveConsoleBridge.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	D:\syake\Temp\sbt_5bd2fdfa\xsbt\InteractiveConsoleFactoryBridge.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	D:\syake\Temp\sbt_5bd2fdfa\xsbt\InteractiveConsoleHelper.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	D:\syake\Temp\sbt_5bd2fdfa\xsbt\InteractiveConsoleResponse.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	D:\syake\Temp\sbt_5bd2fdfa\xsbt\JarUtils.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	D:\syake\Temp\sbt_5bd2fdfa\xsbt\JavaUtils.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	D:\syake\Temp\sbt_5bd2fdfa\xsbt\LocalToNonLocalClass.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	D:\syake\Temp\sbt_5bd2fdfa\xsbt\LocateClassFile.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	D:\syake\Temp\sbt_5bd2fdfa\xsbt\Log.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	D:\syake\Temp\sbt_5bd2fdfa\xsbt\Message.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m	D:\syake\Temp\sbt_5bd2fdfa\xsbt\ScaladocBridge.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m      [0m
+[0m[[0m[0minfo[0m] [0m[0m  Compilation completed in 16.499s.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler 13c92242 for Scala compiler version 2.13.11[0m
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] The Scala compiler is invoked with:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-bootclasspath[0m
+[0m[[0m[0mdebug[0m] [0m[0m	C:\Users\syake\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-library\2.13.11\scala-library-2.13.11.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-classpath[0m
+[0m[[0m[0mdebug[0m] [0m[0m	D:\GitHub\20-Onishi.Yosei\TDD\scalatest_study\target\scala-2.13\classes[0m
+[0m[[0m[0mdebug[0m] [0m[0mScala compilation took 19.4348889 s[0m
+[0m[[0m[0mdebug[0m] [0m[0mdone compiling[0m

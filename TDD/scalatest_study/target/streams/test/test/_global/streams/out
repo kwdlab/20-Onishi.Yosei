@@ -1,0 +1,12 @@
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(CalcSpec, org.scalatest.tools.Framework$$anon$1@5b3d246e, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mCalcSpec:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32msum関数[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should 整数の配列を取得し、それらを足し合わせた整数を返すことができる[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should Intの最大を上回った際にはオーバーフローする[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 646 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 2[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 1, aborted 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 2, failed 0, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mAll tests passed.[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mPassed tests:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	CalcSpec[0m
