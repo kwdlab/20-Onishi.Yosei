@@ -12,6 +12,6 @@ abstract class Money {
 }
 
 object Money {
-    def dollar(amount: Int): Money = new Dollar(amount)
-    def franc(amount: Int): Money = new Franc(amount)
+    def dollar(amount: Int): Money = new Dollar(amount, "USD")
+    def franc(amount: Int): Money = new Franc(amount, "CHF")
 }

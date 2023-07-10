@@ -25,7 +25,7 @@ class MoneyTest extends AnyFlatSpec {
     }
 
     "testCurrency" should "4" in {
-        assert("USD" == Money.dollar(1).currency())
-        assert("CHF" == Money.franc(1).currency())
+        assert(Money.dollar(1).currency() == "USD")
+        assert(Money.franc(1).currency() == "CHF")
     }
 }
