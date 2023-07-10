@@ -6,10 +6,8 @@ import org.scalatest.Assertions._
 class MoneyTest extends AnyFlatSpec {
     "testMultiplication" should "testMultiplication" in {
         val five = new Dollar(5)
-        var product = five.times(2)
-        assert(product.amount == 10)
-        product = five.times(3)
-        assert(product.amount == 15)        
+        assert(five.times(2) == new Dollar(10))
+        assert(five.times(3) == new Dollar(15)) 
     }
 
     "testEquality" should "testEquality" in {
