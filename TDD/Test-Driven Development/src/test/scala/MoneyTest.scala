@@ -13,9 +13,7 @@ class MoneyTest extends AnyFlatSpec {
     "testEquality" should "2" in {
         assert(Money.dollar(5).equals(Money.dollar(5)) == true)
         assert(Money.dollar(5).equals(Money.dollar(6)) == false)
-        assert(Money.franc(5).equals(Money.franc(5)) == true)
-        assert(Money.franc(5).equals(Money.franc(6)) == false)
-        assert(Money.dollar(5).equals(Money.franc(6)) == false)  
+        assert(Money.dollar(5).equals(Money.franc(5)) == false)  
     }
 
     "testFrancMultiplication" should "3" in {
