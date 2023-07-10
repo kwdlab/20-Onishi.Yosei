@@ -1,4 +1,0 @@
-[0m[[0m[31merror[0m] [0m[0mD:\GitHub\20-Onishi.Yosei\TDD\Test-Driven Development\src\test\scala\MoneyTest.scala:8:24: not found: value Money[0m
-[0m[[0m[31merror[0m] [0m[0m        val five = new Money.dollar(5)[0m
-[0m[[0m[31merror[0m] [0m[0m                       ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
