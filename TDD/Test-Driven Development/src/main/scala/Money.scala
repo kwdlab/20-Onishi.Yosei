@@ -1,15 +1,17 @@
 package money
 
-class Money(protected val amount: Int) {
+abstract class Money {
+    
+    protected val amount: Int
+
+    def times(multiplier: Int): Money
 
     def equals(money: Money): Boolean = {
-        amount == money.amount && getClass().equals(money.getClass())
+        amount == money.amount && getClass.equals(money.getClass)
     }
+}
 
-    def dollar(): Money = {
-        new Dollar(amount)
-    }
-    def franc(): Money = {
-        new Franc(amount)
-    }
+object Money {
+    def dollar(amount: Int): Money = new Dollar(amount)
+    def franc(amount: Int): Money = new Franc(amount)
 }

@@ -1,8 +1,7 @@
 package money
 
-class Franc(amount: Int) extends Money(amount) {
-
-    def times(multiplier: Int): Franc = {
+class Franc(val amount: Int) extends Money {
+    override def times(multiplier: Int): Money = {
         new Franc(amount * multiplier)
     }
 }
