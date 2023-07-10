@@ -16,12 +16,6 @@ class MoneyTest extends AnyFlatSpec {
         assert(Money.dollar(5).equals(Money.franc(5)) == false)  
     }
 
-    "testFrancMultiplication" should "3" in {
-        val five = Money.franc(5)
-        assert(five.times(2).equals(Money.franc(10)) == true)
-        assert(five.times(3).equals(Money.franc(15)) == true)
-    }
-
     "testCurrency" should "4" in {
         assert(Money.dollar(1).currency() == "USD")
         assert(Money.franc(1).currency() == "CHF")
