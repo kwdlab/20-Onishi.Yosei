@@ -1,0 +1,4 @@
+[debug] [test-driven-development-test] Classpath dependencies List()
+[debug] [test-driven-development-test] Dependencies from configurations List(test-driven-development)
+[debug] Bloop wrote the configuration of project 'test-driven-development-test' to 'D:\GitHub\20-Onishi.Yosei\TDD\Test-Driven Development\.bloop\test-driven-development-test.json'
+[success] Generated .bloop\test-driven-development-test.json
