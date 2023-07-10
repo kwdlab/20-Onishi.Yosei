@@ -1,22 +1,7 @@
-[0m[[0m[31merror[0m] [0m[0mD:\GitHub\20-Onishi.Yosei\TDD\Test-Driven Development\src\test\scala\MoneyTest.scala:3:12: object junit is not a member of package org[0m
-[0m[[0m[31merror[0m] [0m[0mimport org.junit.jupiter.api.Test[0m
-[0m[[0m[31merror[0m] [0m[0m           ^[0m
-[0m[[0m[31merror[0m] [0m[0mD:\GitHub\20-Onishi.Yosei\TDD\Test-Driven Development\src\test\scala\MoneyTest.scala:4:12: object junit is not a member of package org[0m
-[0m[[0m[31merror[0m] [0m[0mimport org.junit.jupiter.api.Assertions._[0m
-[0m[[0m[31merror[0m] [0m[0m           ^[0m
-[0m[[0m[31merror[0m] [0m[0mD:\GitHub\20-Onishi.Yosei\TDD\Test-Driven Development\src\test\scala\MoneyTest.scala:7:6: not found: type test[0m
-[0m[[0m[31merror[0m] [0m[0m    @test[0m
-[0m[[0m[31merror[0m] [0m[0m     ^[0m
-[0m[[0m[31merror[0m] [0m[0mD:\GitHub\20-Onishi.Yosei\TDD\Test-Driven Development\src\test\scala\MoneyTest.scala:9:21: not found: type five[0m
-[0m[[0m[31merror[0m] [0m[0m        val Dollar: five = new Dollar(5)[0m
-[0m[[0m[31merror[0m] [0m[0m                    ^[0m
-[0m[[0m[31merror[0m] [0m[0mD:\GitHub\20-Onishi.Yosei\TDD\Test-Driven Development\src\test\scala\MoneyTest.scala:10:9: not found: value five[0m
-[0m[[0m[31merror[0m] [0m[0m        five.times(2)[0m
-[0m[[0m[31merror[0m] [0m[0m        ^[0m
-[0m[[0m[31merror[0m] [0m[0mD:\GitHub\20-Onishi.Yosei\TDD\Test-Driven Development\src\test\scala\MoneyTest.scala:11:9: not found: value assetEquals[0m
-[0m[[0m[31merror[0m] [0m[0m        assetEquals(10, five.amount)[0m
-[0m[[0m[31merror[0m] [0m[0m        ^[0m
-[0m[[0m[31merror[0m] [0m[0mD:\GitHub\20-Onishi.Yosei\TDD\Test-Driven Development\src\test\scala\MoneyTest.scala:11:25: not found: value five[0m
-[0m[[0m[31merror[0m] [0m[0m        assetEquals(10, five.amount)[0m
-[0m[[0m[31merror[0m] [0m[0m                        ^[0m
-[0m[[0m[31merror[0m] [0m[0m7 errors found[0m
+[0m[[0m[31merror[0m] [0m[0mD:\GitHub\20-Onishi.Yosei\TDD\Test-Driven Development\src\test\scala\MoneyTest.scala:9:20: value amount is not a member of Unit[0m
+[0m[[0m[31merror[0m] [0m[0m    assert(product.amount == 10)[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0mD:\GitHub\20-Onishi.Yosei\TDD\Test-Driven Development\src\test\scala\MoneyTest.scala:11:20: value amount is not a member of Unit[0m
+[0m[[0m[31merror[0m] [0m[0m    assert(product.amount == 15)[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m

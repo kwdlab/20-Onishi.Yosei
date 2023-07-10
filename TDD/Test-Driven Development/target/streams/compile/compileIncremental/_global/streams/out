@@ -22,11 +22,11 @@
 [0m[[0m[0mdebug[0m] [0m[0mcompilation cycle 1[0m
 [0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to D:\GitHub\20-Onishi.Yosei\TDD\Test-Driven Development\target\scala-2.13\classes ...[0m
 [0m[[0m[0mdebug[0m] [0m[0mGetting org.scala-sbt:compiler-bridge_2.13:1.8.1:compile for Scala 2.13.11[0m
-[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler 386dabd4 for Scala compiler version 2.13.11[0m
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler 36674ac7 for Scala compiler version 2.13.11[0m
 [0m[[0m[0mdebug[0m] [0m[0m[zinc] The Scala compiler is invoked with:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	-bootclasspath[0m
 [0m[[0m[0mdebug[0m] [0m[0m	C:\Users\syake\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-library\2.13.11\scala-library-2.13.11.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	-classpath[0m
 [0m[[0m[0mdebug[0m] [0m[0m	D:\GitHub\20-Onishi.Yosei\TDD\Test-Driven Development\target\scala-2.13\classes[0m
-[0m[[0m[0mdebug[0m] [0m[0mScala compilation took 0.2083881 s[0m
+[0m[[0m[0mdebug[0m] [0m[0mScala compilation took 0.1069542 s[0m
 [0m[[0m[0mdebug[0m] [0m[0mdone compiling[0m
