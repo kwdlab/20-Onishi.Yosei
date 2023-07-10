@@ -23,4 +23,9 @@ class MoneyTest extends AnyFlatSpec {
         assert(five.times(2).equals(Money.franc(10)) == true)
         assert(five.times(3).equals(Money.franc(15)) == true)
     }
+
+    "testCurrency" should "4" in {
+        assert("USD" == Money.dollar(1).currency())
+        assert("CHF" == Money.franc(1).currency())
+    }
 }
