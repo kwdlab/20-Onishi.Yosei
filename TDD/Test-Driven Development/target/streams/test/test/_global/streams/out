@@ -1,4 +1,4 @@
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(money.MoneyTest, org.scalatest.tools.Framework$$anon$1@52a5e0da, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(money.MoneyTest, org.scalatest.tools.Framework$$anon$1@1f625bd9, false, [SuiteSelector])[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mMoneyTest:[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mtestMultiplication[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should 1[0m[0m
@@ -6,7 +6,7 @@
 [0m[[0m[0minfo[0m] [0m[0m[32m- should 2[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mtestFrancMultiplication[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should 3[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 92 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 100 milliseconds.[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 3[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 1, aborted 0[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 3, failed 0, canceled 0, ignored 0, pending 0[0m[0m

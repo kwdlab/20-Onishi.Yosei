@@ -1,7 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0mD:\GitHub\20-Onishi.Yosei\TDD\Test-Driven Development\src\main\scala\Dollar.scala:10:25: value amount in class Money cannot be accessed as a member of money.Money from class Dollar in package money[0m
-[0m[[0m[31merror[0m] [0m[0m Access to protected value amount not permitted because[0m
-[0m[[0m[31merror[0m] [0m[0m prefix type money.Money does not conform to[0m
-[0m[[0m[31merror[0m] [0m[0m class Dollar in package money where the access takes place[0m
-[0m[[0m[31merror[0m] [0m[0m        amount == money.amount[0m
-[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0mD:\GitHub\20-Onishi.Yosei\TDD\Test-Driven Development\src\main\scala\Money.scala:4:14: expected start of definition[0m
+[0m[[0m[31merror[0m] [0m[0m    abstract Money times(multiplier: Int)[0m
+[0m[[0m[31merror[0m] [0m[0m             ^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m
