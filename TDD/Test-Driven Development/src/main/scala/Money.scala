@@ -3,13 +3,12 @@ package money
 abstract class Money {
     
     protected val amount: Int
+    protected val curr: String
 
     def times(multiplier: Int): Money
-    def currency(): String
+    def currency(): String = curr 
 
-    def equals(money: Money): Boolean = {
-        amount == money.amount && getClass.equals(money.getClass)
-    }
+    def equals(money: Money): Boolean = amount == money.amount && getClass.equals(money.getClass)
 }
 
 object Money {
