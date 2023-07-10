@@ -1,7 +1,7 @@
-[0m[[0m[31merror[0m] [0m[0mD:\GitHub\20-Onishi.Yosei\TDD\Test-Driven Development\src\test\scala\MoneyTest.scala:9:20: value amount is not a member of Unit[0m
-[0m[[0m[31merror[0m] [0m[0m    assert(product.amount == 10)[0m
-[0m[[0m[31merror[0m] [0m[0m                   ^[0m
-[0m[[0m[31merror[0m] [0m[0mD:\GitHub\20-Onishi.Yosei\TDD\Test-Driven Development\src\test\scala\MoneyTest.scala:11:20: value amount is not a member of Unit[0m
-[0m[[0m[31merror[0m] [0m[0m    assert(product.amount == 15)[0m
-[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0mD:\GitHub\20-Onishi.Yosei\TDD\Test-Driven Development\src\test\scala\MoneyTest.scala:7:33: not found: value in[0m
+[0m[[0m[31merror[0m] [0m[0m    "testMultiplication" should in {[0m
+[0m[[0m[31merror[0m] [0m[0m                                ^[0m
+[0m[[0m[31merror[0m] [0m[0mD:\GitHub\20-Onishi.Yosei\TDD\Test-Driven Development\src\test\scala\MoneyTest.scala:15:27: not found: value in[0m
+[0m[[0m[31merror[0m] [0m[0m    "testEquality" should in {[0m
+[0m[[0m[31merror[0m] [0m[0m                          ^[0m
 [0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
