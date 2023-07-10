@@ -12,7 +12,9 @@ class MoneyTest extends AnyFlatSpec {
 
     "testEquality" should "2" in {
         assert(new Dollar(5).equals(new Dollar(5)) == true)
-        assert(new Dollar(5).equals(new Dollar(6)) == false)  
+        assert(new Dollar(5).equals(new Dollar(6)) == false)
+        assert(new Franc(5).equals(new Franc(5)) == true)
+        assert(new Franc(5).equals(new Franc(6)) == false)  
     }
 
     "testFrancMultiplication" should "3" in {
